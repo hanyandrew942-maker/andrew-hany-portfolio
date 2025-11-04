@@ -3,7 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eng Andrew Hany - مطور مواقع ويب محترف</title>
+    <title>Eng Andrew Hany | مطور مواقع ويب محترف - تصميم وتطوير مواقع احترافية</title>
+    <meta name="description" content="Eng Andrew Hany - مطور مواقع ويب محترف، متخصص في تصميم وتطوير مواقع الويب، متاجر إلكترونية، وتطبيقات الجوال. جودة واحترافية في العمل.">
+    <meta name="keywords" content="مطور ويب, تصميم مواقع, برمجة, متاجر إلكترونية, تطبيقات جوال, Andrew Hany">
+    <meta name="author" content="Eng Andrew Hany">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Eng Andrew Hany | مطور مواقع ويب محترف">
+    <meta property="og:description" content="مطور مواقع ويب محترف متخصص في تصميم وتطوير مواقع الويب والتطبيقات">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://engandrewhany.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -21,6 +34,7 @@
             --light: #DCF8C6;
             --text: #333;
             --background: #f8f9fa;
+            --professional: #2C3E50;
         }
         
         body {
@@ -37,27 +51,28 @@
             padding: 0 15px;
         }
         
-        /* Header */
+        /* Professional Header */
         header {
             background-color: white;
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
+            backdrop-filter: blur(10px);
         }
         
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 0;
+            padding: 15px 0;
         }
         
         .logo {
             font-size: 28px;
             font-weight: bold;
-            color: var(--dark);
+            color: var(--professional);
             display: flex;
             align-items: center;
         }
@@ -73,16 +88,17 @@
         }
         
         .nav-links li {
-            margin-left: 30px;
+            margin-left: 35px;
         }
         
         .nav-links a {
             text-decoration: none;
-            color: var(--text);
+            color: var(--professional);
             font-weight: 600;
-            font-size: 18px;
-            transition: color 0.3s;
+            font-size: 17px;
+            transition: all 0.3s;
             position: relative;
+            padding: 5px 0;
         }
         
         .nav-links a:hover {
@@ -92,11 +108,11 @@
         .nav-links a::after {
             content: '';
             position: absolute;
-            bottom: -5px;
+            bottom: 0;
             right: 0;
             width: 0;
             height: 2px;
-            background-color: var(--primary);
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
             transition: width 0.3s;
         }
         
@@ -104,9 +120,9 @@
             width: 100%;
         }
         
-        /* Hero Section */
+        /* Professional Hero Section */
         .hero {
-            background: linear-gradient(135deg, var(--secondary), var(--dark));
+            background: linear-gradient(135deg, var(--professional), var(--dark));
             color: white;
             padding: 180px 0 100px;
             text-align: center;
@@ -121,295 +137,343 @@
             right: 0;
             width: 100%;
             height: 100%;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" opacity="0.1"><polygon fill="white" points="1000,500 500,1000 0,500 500,0"/></svg>');
-            background-size: 300px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" opacity="0.05"><polygon fill="white" points="1000,500 500,1000 0,500 500,0"/></svg>');
+            background-size: 400px;
         }
         
         .hero-content {
             position: relative;
             z-index: 1;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
         }
         
+        .professional-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 25px;
+            border-radius: 25px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 3.8rem;
             margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-weight: 700;
         }
         
         .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 30px;
-            opacity: 0.9;
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            line-height: 1.8;
         }
         
         .btn {
-            display: inline-block;
-            background-color: var(--primary);
+            display: inline-flex;
+            align-items: center;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
-            padding: 15px 35px;
+            padding: 18px 40px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: bold;
             font-size: 1.1rem;
             transition: all 0.3s;
-            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
-            border: 2px solid var(--primary);
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn i {
+            margin-left: 10px;
         }
         
         .btn:hover {
-            background-color: transparent;
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.6);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+        }
+        
+        /* About Section */
+        .about {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .about-text h2 {
+            font-size: 2.8rem;
+            color: var(--professional);
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+        
+        .about-text p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .skill {
+            background: var(--background);
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: 600;
+            color: var(--professional);
+            border: 2px solid transparent;
+            transition: all 0.3s;
+        }
+        
+        .skill:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+        
+        .about-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .stat {
+            text-align: center;
+            padding: 30px;
+            background: var(--background);
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+        
+        .stat:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .stat-text {
+            color: var(--professional);
+            font-weight: 600;
         }
         
         /* Services Section */
         .services {
             padding: 100px 0;
-            background-color: white;
+            background: var(--background);
         }
         
         .section-title {
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: 80px;
         }
         
         .section-title h2 {
-            font-size: 2.5rem;
-            color: var(--dark);
-            margin-bottom: 15px;
+            font-size: 3rem;
+            color: var(--professional);
+            margin-bottom: 20px;
+            font-weight: 700;
         }
         
         .section-title p {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             color: #666;
-            max-width: 600px;
+            max-width: 700px;
             margin: 0 auto;
+            line-height: 1.8;
         }
         
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
         }
         
         .service-card {
             background: white;
-            border-radius: 15px;
-            padding: 40px 30px;
+            border-radius: 20px;
+            padding: 50px 40px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s;
             border: 1px solid #f0f0f0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
         }
         
         .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+            transform: translateY(-15px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
         }
         
         .service-icon {
-            width: 80px;
-            height: 80px;
+            width: 90px;
+            height: 90px;
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 25px;
+            margin: 0 auto 30px;
             color: white;
-            font-size: 2rem;
+            font-size: 2.2rem;
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover .service-icon {
+            transform: scale(1.1);
         }
         
         .service-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            color: var(--dark);
+            font-size: 1.7rem;
+            margin-bottom: 20px;
+            color: var(--professional);
+            font-weight: 700;
         }
         
         .service-card p {
             color: #666;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            line-height: 1.8;
+            font-size: 1.1rem;
         }
         
-        /* Portfolio Section */
-        .portfolio {
-            padding: 100px 0;
-            background-color: var(--background);
-        }
-        
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-        }
-        
-        .portfolio-item {
-            background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        
-        .portfolio-item:hover {
-            transform: translateY(-5px);
-        }
-        
-        .portfolio-img {
-            height: 250px;
-            background: linear-gradient(135deg, var(--accent), var(--secondary));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 3rem;
-        }
-        
-        .portfolio-content {
-            padding: 25px;
-        }
-        
-        .portfolio-content h3 {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-            color: var(--dark);
-        }
-        
-        /* Contact Section */
-        .contact {
-            padding: 100px 0;
-            background: linear-gradient(135deg, var(--dark), var(--secondary));
-            color: white;
-            text-align: center;
-        }
-        
-        .contact h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        
-        .contact p {
-            font-size: 1.2rem;
-            margin-bottom: 40px;
-            opacity: 0.9;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .contact-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        
-        .contact-btn {
-            display: flex;
-            align-items: center;
-            background-color: white;
-            color: var(--dark);
-            padding: 15px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: all 0.3s;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-        
-        .contact-btn i {
-            margin-left: 10px;
-            font-size: 1.2rem;
-            color: var(--primary);
-        }
-        
-        .contact-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-            background-color: var(--light);
-        }
-        
-        /* WhatsApp Floating Button */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 25px;
-            left: 25px;
-            width: 60px;
-            height: 60px;
-            background-color: var(--primary);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.8rem;
-            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
-            z-index: 1000;
-            transition: all 0.3s;
-            animation: pulse 2s infinite;
-            text-decoration: none;
-        }
-        
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.6);
-        }
-        
-        @keyframes pulse {
-            0% {
-                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-            }
-            70% {
-                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
-            }
-            100% {
-                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-            }
-        }
-        
-        /* Footer */
+        /* Professional Footer */
         footer {
-            background-color: var(--dark);
+            background: var(--professional);
             color: white;
-            padding: 50px 0 30px;
-            text-align: center;
+            padding: 70px 0 30px;
         }
         
         .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 50px;
         }
         
         .footer-logo {
-            font-size: 24px;
+            font-size: 28px;
             font-weight: bold;
+            margin-bottom: 20px;
         }
         
-        .social-links {
-            display: flex;
-            gap: 15px;
+        .footer-about {
+            color: #ccc;
+            line-height: 1.8;
+            margin-bottom: 25px;
         }
         
-        .social-links a {
+        .footer-links h3, .footer-contact h3 {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
             color: white;
-            font-size: 1.5rem;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
             transition: color 0.3s;
         }
         
-        .social-links a:hover {
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+        
+        .footer-contact p {
+            color: #ccc;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer-contact i {
+            margin-left: 10px;
             color: var(--primary);
         }
         
         .copyright {
             border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 20px;
-            font-size: 0.9rem;
-            opacity: 0.8;
+            padding-top: 30px;
+            text-align: center;
+            color: #999;
+            font-size: 0.95rem;
+        }
+        
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            transition: all 0.3s;
+            animation: professional-pulse 2s infinite;
+            text-decoration: none;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.15);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+        }
+        
+        @keyframes professional-pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
         }
         
         /* Responsive Design */
@@ -420,39 +484,45 @@
             }
             
             .nav-links {
-                margin-top: 15px;
+                margin-top: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
             }
             
             .nav-links li {
-                margin: 0 10px;
+                margin: 5px 15px;
             }
             
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2.8rem;
             }
             
             .hero p {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
             }
             
-            .section-title h2 {
-                font-size: 2rem;
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
             }
             
-            .contact-buttons {
-                flex-direction: column;
-                align-items: center;
+            .services-grid {
+                grid-template-columns: 1fr;
             }
             
             .footer-content {
-                flex-direction: column;
-                gap: 20px;
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .about-stats {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
+    <!-- Professional Header -->
     <header>
         <div class="container">
             <nav class="navbar">
@@ -462,23 +532,70 @@
                 </div>
                 <ul class="nav-links">
                     <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#about">عنّي</a></li>
                     <li><a href="#services">الخدمات</a></li>
-                    <li><a href="#portfolio">أعمالي</a></li>
+                    <li><a href="#portfolio">المشاريع</a></li>
                     <li><a href="#contact">اتصل بي</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Professional Hero Section -->
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
+                <div class="professional-badge">
+                    <i class="fas fa-award"></i> مطور ويب محترف معتمد
+                </div>
                 <h1>Eng Andrew Hany</h1>
-                <p>مطور مواقع ويب محترف - أصمم وأطور مواقع ويب مبتكرة تلبي احتياجات عملك وتواكب أحدث التقنيات</p>
+                <p>مطور ومصمم مواقع ويب احترافي، متخصص في إنشاء حلول رقمية مبتكرة تلبي احتياجات الأعمال في العصر الرقمي. أجمع بين الإبداع والتقنية لبناء تجارب مستخدم استثنائية.</p>
                 <a href="#contact" class="btn">
-                    <i class="fab fa-whatsapp"></i> تواصل معي الآن
+                    <i class="fab fa-whatsapp"></i> ابدأ مشروعك الآن
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>مطور ويب محترف بخبرة واسعة</h2>
+                    <p>أنا Andrew Hany، مطور مواقع ويب محترف بشغف كبير للتقنية والبرمجة. أمتلك خبرة واسعة في تصميم وتطوير حلول ويب متكاملة تلبي أعلى معايير الجودة والأداء.</p>
+                    <p>أتخصص في تحويل الأفكار إلى واقع رقمي ملموس، مع الاهتمام بكل التفاصيل التقنية والتجربة البصرية لضمان نجاح مشاريع عملائي.</p>
+                    
+                    <div class="skills">
+                        <span class="skill">HTML5 & CSS3</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">React.js</span>
+                        <span class="skill">Node.js</span>
+                        <span class="skill">PHP & MySQL</span>
+                        <span class="skill">UI/UX Design</span>
+                        <span class="skill">Responsive Design</span>
+                        <span class="skill">SEO Optimization</span>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-text">مشروع مكتمل</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-text">سنوات خبرة</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">40+</div>
+                        <div class="stat-text">عميل راضي</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-text">دعم فني</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -487,8 +604,8 @@
     <section class="services" id="services">
         <div class="container">
             <div class="section-title">
-                <h2>خدماتي</h2>
-                <p>أقدم مجموعة متكاملة من خدمات تطوير الويب لتحقيق أهدافك الرقمية</p>
+                <h2>خدماتي الاحترافية</h2>
+                <p>أقدم مجموعة متكاملة من خدمات تطوير الويب باستخدام أحدث التقنيات وأفضل الممارسات</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
@@ -496,115 +613,74 @@
                         <i class="fas fa-laptop-code"></i>
                     </div>
                     <h3>تطوير مواقع الويب</h3>
-                    <p>تصميم وتطوير مواقع ويب متجاوبة وسريعة باستخدام أحدث التقنيات</p>
+                    <p>تصميم وتطوير مواقع ويب متجاوبة وسريعة باستخدام أحدث التقنيات والمعايير القياسية، مع ضمان توافقها مع جميع الأجهزة والمتصفحات.</p>
                     <a href="https://wa.me/201501056672?text=مرحباً، أريد الاستفسار عن خدمة تطوير مواقع الويب" class="btn" target="_blank">اطلب الخدمة</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>المتاجر الإلكترونية</h3>
+                    <p>بناء متاجر إلكترونية متكاملة مع أنظمة دفع آمنة، إدارة المخزون، وتجربة مستخدم محسنة لزيادة معدلات التحويل والمبيعات.</p>
+                    <a href="https://wa.me/201501056672?text=مرحباً، أريد الاستفسار عن خدمة المتاجر الإلكترونية" class="btn" target="_blank">اطلب الخدمة</a>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
                     <h3>تطبيقات الجوال</h3>
-                    <p>بناء تطبيقات جوال مبتكرة تعمل على جميع المنصات والأجهزة</p>
+                    <p>تطوير تطبيقات جوال مبتكرة تعمل على جميع المنصات، مع واجهات مستخدم بديهية وأداء عالي يلبي توقعات المستخدمين الحديثة.</p>
                     <a href="https://wa.me/201501056672?text=مرحباً، أريد الاستفسار عن خدمة تطبيقات الجوال" class="btn" target="_blank">اطلب الخدمة</a>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-                    <h3>متاجر إلكترونية</h3>
-                    <p>إنشاء متاجر إلكترونية متكاملة مع أنظمة دفع آمنة وسهلة الاستخدام</p>
-                    <a href="https://wa.me/201501056672?text=مرحباً، أريد الاستفسار عن خدمة المتاجر الإلكترونية" class="btn" target="_blank">اطلب الخدمة</a>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
+    <!-- Professional Footer -->
+    <footer id="contact">
         <div class="container">
-            <div class="section-title">
-                <h2>أعمالي السابقة</h2>
-                <p>مجموعة من أحدث المشاريع التي قمت بتنفيذها</p>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">Eng Andrew Hany</div>
+                    <p class="footer-about">
+                        مطور مواقع ويب محترف متخصص في تقديم حلول رقمية مبتكرة تجمع بين الجمال البصري والأداء التقني المتميز. نعمل معاً لتحقيق أهدافك الرقمية.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://wa.me/201501056672" target="_blank" class="btn">
+                            <i class="fab fa-whatsapp"></i> تواصل عبر واتساب
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#about">عنّي</a></li>
+                        <li><a href="#services">الخدمات</a></li>
+                        <li><a href="#portfolio">المشاريع</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>معلومات التواصل</h3>
+                    <p><i class="fab fa-whatsapp"></i> +20 150 105 6672</p>
+                    <p><i class="fas fa-envelope"></i> engandrewhany@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +20 150 105 6672</p>
+                    <p><i class="fas fa-map-marker-alt"></i> مصر</p>
+                </div>
             </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <div class="portfolio-img">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>موقع شركة تقنية</h3>
-                        <p>موقع متكامل لشركة تقنية مع نظام إدارة محتوى متطور</p>
-                        <a href="https://wa.me/201501056672?text=مرحباً، أريد الاستفسار عن مشروع موقع الشركات" class="btn" target="_blank">اطلب مشروع مماثل</a>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-img">
-                        <i class="fas fa-store"></i>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>متجر إلكتروني</h3>
-                        <p>منصة تسوق إلكتروني مع نظام دفع وتوصيل متكامل</p>
-                        <a href="https://wa.me/201501056672?text=مرحباً، أريد الاستفسار عن مشروع المتجر الإلكتروني" class="btn" target="_blank">اطلب مشروع مماثل</a>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-img">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>منصة تعليمية</h3>
-                        <p>نظام تعلم إلكتروني مع إدارة الطلاب والمحتوى التعليمي</p>
-                        <a href="https://wa.me/201501056672?text=مرحباً، أريد الاستفسار عن مشروع المنصة التعليمية" class="btn" target="_blank">اطلب مشروع مماثل</a>
-                    </div>
-                </div>
+            
+            <div class="copyright">
+                &copy; 2024 Eng Andrew Hany. جميع الحقوق محفوظة. | تم التطوير بدقة وإحترافية
             </div>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2>لنبدأ مشروعك الجديد</h2>
-            <p>تواصل معي الآن لمناقشة فكرة مشروعك والحصول على استشارة مجانية</p>
-            <div class="contact-buttons">
-                <a href="https://wa.me/201501056672?text=مرحباً Eng Andrew، أريد الاستفسار عن خدماتك" class="contact-btn" target="_blank">
-                    <i class="fab fa-whatsapp"></i>
-                    محادثة واتساب
-                </a>
-                <a href="tel:+201501056672" class="contact-btn">
-                    <i class="fas fa-phone"></i>
-                    اتصل بي الآن
-                </a>
-                <a href="mailto:andrew@example.com" class="contact-btn">
-                    <i class="fas fa-envelope"></i>
-                    إرسال بريد إلكتروني
-                </a>
-            </div>
-        </div>
-    </section>
+    </footer>
 
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/201501056672?text=مرحباً Eng Andrew، أريد الاستفسار عن خدماتك" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">Eng Andrew Hany</div>
-                <div class="social-links">
-                    <a href="https://wa.me/201501056672" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <div class="copyright">
-                &copy; 2024 Eng Andrew Hany. جميع الحقوق محفوظة.
-            </div>
-        </div>
-    </footer>
 
     <script>
         // Smooth scrolling for navigation links
@@ -633,12 +709,16 @@
         }, observerOptions);
 
         // Observe elements for animation
-        document.querySelectorAll('.service-card, .portfolio-item').forEach(el => {
+        document.querySelectorAll('.service-card, .stat, .about-text, .section-title').forEach(el => {
             el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
+            el.style.transform = 'translateY(30px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(el);
         });
+
+        // Professional console message
+        console.log('%c🚀 Eng Andrew Hany - مطور مواقع ويب محترف', 'color: #25D366; font-size: 16px; font-weight: bold;');
+        console.log('%c📍 متخصص في تصميم وتطوير الحلول الرقمية المبتكرة', 'color: #128C7E; font-size: 14px;');
     </script>
 </body>
 </html>
